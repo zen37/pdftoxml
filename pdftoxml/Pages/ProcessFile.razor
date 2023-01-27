@@ -1,0 +1,25 @@
+﻿@page "/file"
+
+<PageTitle>File</PageTitle>
+
+<h1>File</h1>
+
+<p role="status">only pdf and max. 2MB</p>
+
+<form action="submit-form.php" method="post" accept=".pdf" enctype="multipart/form-data">
+    <input type="file" name="fileName">
+    <input type="submit" value="Upload">
+</form>
+<a href="file">This is the pdf file I have uploaded</a>
+
+<p>after upload I can see the extract button</p>
+<button class="btn btn-primary" @onclick="IncrementCount">Extract</button>
+
+@code {
+    private int currentCount = 0;
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+}
