@@ -68,8 +68,26 @@
 <button class="btn btn-primary">Process</button> clicking it will create the XML as per the spec either directly in the db or saved on the user's machine, whatever is easier
 <br />
 <br />
-<button class="btn btn-primary">Send</button> clicking it will create a string  (no need to be displayed anywhere just to see in the debugger that's string')
+<button class="btn btn-primary">Send</button> clicking it will create a string  (no need to be displayed anywhere just to see in the debugger that's string)
+<input type="text" value="0" placeholder="number of person tags">
+<br /><br />
+<p>if number 1 entered the string will be one person tag (of course no plaintext tag at the end)</p>
+<plaintext><file xmlns="http://www.w3.org" version="1.0" xml:lang="en-US"><person type="neutral"><other rate="0%">WOODY HARRIS wears glasses, skinny, hair thinning, works for an insurance company. TONY ANDERS, tall, imposing, architect. ….. Woody is holding a Starbucks cup.</other></person></file>
+</plaintext>
+<p>if number 2 entered the string will be two person tag (of course no plaintext tag at the end)</p>
+<plaintext>
+    <file xmlns="http://www.w3.org" version="1.0" xml:lang="en-US">
+        <person type="neutral">
+            <other rate="0%">
+                WOODY HARRIS wears glasses, skinny, hair thinning, works for an insurance company. TONY ANDERS, tall, imposing, architect. ….. Woody is holding a Starbucks cup.
+            </other>
+        </person>
+        <person type="friendly">
+            <other rate="0%">
+                "Thank you for your patience and support" - this is what this IT department says …… They must know I don’t have any patience for anything.
+            </other>
+        </person>
+    </file>
+</plaintext>
 
-@code {
-
-}
+if 0 the full extracted xml will be in the string
