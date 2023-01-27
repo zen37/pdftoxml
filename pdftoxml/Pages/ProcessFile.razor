@@ -13,12 +13,14 @@
 <br/>
 <br/>
 <a href="file">my pdf file</a>
-<form action="submit-form.php" method="post" accept=".pdf" enctype="multipart/form-data">
-    <input type="file" name="fileName">
-    <input type="submit" value="Upload">
-</form>
+
 <br />
 <p>After upload I can see the extract button and additional upload file (max. additional 2 files of max. 2Mb each can be uploaded)</p>
+<form action="submit-form.php" method="post" accept=".pdf" enctype="multipart/form-data">
+    <input type="file" name="fileName">
+    <input type="submit" value="Additional Upload">
+</form>
+<br />
 <button class="btn btn-primary">Extract</button>
 
 <br />
